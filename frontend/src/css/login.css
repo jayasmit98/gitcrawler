@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_container, body {
+  height: 100vh;
+  background-color: #e0aee0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.login_section {
+  background-color: purple;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0 0.5rem 0.5rem lightyellow;
+          box-shadow: 0 0 0.5rem 0.5rem lightyellow;
+  width: 30rem;
+  padding: 2rem;
+}
+
+.login_section .form_container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login_section .form_container header h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.login_section .form_container form {
+  width: 100%;
+}
+
+.login_section .form_container form .input_block {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login_section .form_container form .input_block .input_container {
+  width: 100%;
+}
+
+.login_section .form_container form .input_block .input_container input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #e58eff;
+}
+
+.login_section .form_container form .input_block .input_container input::-webkit-input-placeholder {
+  color: #630663;
+}
+
+.login_section .form_container form .input_block .input_container input:-ms-input-placeholder {
+  color: #630663;
+}
+
+.login_section .form_container form .input_block .input_container input::-ms-input-placeholder {
+  color: #630663;
+}
+
+.login_section .form_container form .input_block .input_container input::placeholder {
+  color: #630663;
+}
+
+.login_section .form_container form .button_block {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.login_section .form_container form .button_block .or {
+  color: white;
+  font-weight: 600;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.login_section .form_container form .button_block .dark-blue {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: black;
+  text-shadow: 0 0 0.05rem 0.05rem white;
+  background-color: #cd8be7;
+  border: 1px solid black;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+.login_section .form_container form .button_block .googlebutton {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.login_section .form_container .signup_container {
+  justify-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login_section .form_container .signup_container p {
+  color: white;
+}
+
+.login_section .form_container .signup_container span {
+  color: whitesmoke;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=login.css.map */

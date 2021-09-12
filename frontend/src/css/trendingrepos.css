@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.maincontainer {
+  display: -ms-grid;
+  display: grid;
+  min-height: 95vh;
+}
+
+.maincontainer .button_block_2 {
+  width: 100%;
+  position: relative;
+  top: 5rem;
+  padding: 1rem 2rem;
+}
+
+.maincontainer .button_block_2 .home_button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: darkmagenta;
+  color: white;
+  border: none;
+  padding: 0.65rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.95rem;
+  border: 2px solid black;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  cursor: pointer;
+}
+
+.maincontainer .button_block_2 .home_button:hover {
+  background-color: whitesmoke;
+  color: darkmagenta;
+}
+
+.maincontainer .loader {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid darkmagenta;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.maincontainer .users {
+  position: absolute;
+  top: 14rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.maincontainer .users .cards {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  border: 2px solid darkmagenta;
+  -webkit-box-shadow: 0 0 0.5rem 0.025rem darkmagenta;
+          box-shadow: 0 0 0.5rem 0.025rem darkmagenta;
+}
+
+.maincontainer .users .cards .details ul {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.maincontainer .users .cards .details ul li span {
+  color: darkmagenta;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=trendingrepos.css.map */

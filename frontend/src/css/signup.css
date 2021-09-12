@@ -1,0 +1,104 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.signup_container_2 {
+  background-color: purple;
+  width: 30rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0 0.5rem 0.5rem lightyellow;
+          box-shadow: 0 0 0.5rem 0.5rem lightyellow;
+  padding: 2rem;
+}
+
+.signup_container_2 header h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.signup_container_2 form {
+  width: 100%;
+}
+
+.signup_container_2 form .input_container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.signup_container_2 form .input_container .input_block input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #e58eff;
+}
+
+.signup_container_2 form .input_container .input_block input::-webkit-input-placeholder {
+  color: #630663;
+}
+
+.signup_container_2 form .input_container .input_block input:-ms-input-placeholder {
+  color: #630663;
+}
+
+.signup_container_2 form .input_container .input_block input::-ms-input-placeholder {
+  color: #630663;
+}
+
+.signup_container_2 form .input_container .input_block input::placeholder {
+  color: #630663;
+}
+
+.signup_container_2 form .button_container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.signup_container_2 form .button_container button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: black;
+  text-shadow: 0 0 0.05rem 0.05rem white;
+  background-color: #cd8be7;
+  color: #3d073d;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.signup_container_2 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup_container_2 footer p {
+  color: white;
+}
+
+.signup_container_2 footer span {
+  color: white;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=signup.css.map */

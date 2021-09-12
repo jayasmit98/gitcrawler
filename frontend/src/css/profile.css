@@ -1,0 +1,241 @@
+.main_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  row-gap: 1rem;
+  width: 100vw;
+  padding: 2rem 2rem;
+  position: relative;
+  min-height: 98vh;
+  top: 4rem;
+}
+
+.main_profile .input_container {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.main_profile .input_container .input_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  padding: 0.5rem;
+  background-color: darkmagenta;
+  border-radius: 0.95rem;
+  border: 2px solid black;
+}
+
+.main_profile .input_container .input_field figure {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_profile .input_container .input_field figure img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+}
+
+.main_profile .input_container .input_field form {
+  width: 100%;
+}
+
+.main_profile .input_container .input_field form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.main_profile .trending_button {
+  display: inline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: darkmagenta;
+  color: white;
+  border: none;
+  padding: 0.65rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.95rem;
+  border: 2px solid black;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+
+.main_profile .trending_button:hover {
+  background-color: whitesmoke;
+  color: darkmagenta;
+}
+
+.main_profile .loader {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-self: center;
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid darkmagenta;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.main_profile .users {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.main_profile .users .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid darkmagenta;
+  -webkit-box-shadow: 0 0 0.2rem 0.05rem purple;
+          box-shadow: 0 0 0.2rem 0.05rem purple;
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+  transition: -webkit-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+  transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
+}
+
+.main_profile .users .cards figure {
+  margin: 0;
+}
+
+.main_profile .users .cards figure img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_profile .users .cards .details ul {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 0.35rem;
+}
+
+.main_profile .users .cards .details ul li span {
+  color: darkmagenta;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.main_profile .users .cards:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-transform: scale(1.015);
+          transform: scale(1.015);
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem purple;
+          box-shadow: 0 0 0.5rem 0.1rem purple;
+}
+
+.main_profile .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_profile .pagination .inactive {
+  padding: 0.5rem;
+  border: 1px solid darkmagenta;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.main_profile .pagination .active {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: darkmagenta;
+  border-radius: 0.5rem;
+  color: white;
+}
+/*# sourceMappingURL=profile.css.map */
